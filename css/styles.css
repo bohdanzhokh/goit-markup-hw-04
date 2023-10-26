@@ -59,10 +59,6 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover .modal.svg,
-.modal-btn:focus .modal.svg {
-  fill: var(--WHITE);
-}
 
 .backdrop {
   position: fixed;
@@ -104,6 +100,7 @@ body {
 .modal-btn:focus {
   background-color: var(--hover-link);
   border: none;
+  fill: var(--WHITE);
 }
 
 /*HEADER*/
