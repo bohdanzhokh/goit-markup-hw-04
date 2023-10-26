@@ -10,9 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -25,7 +29,9 @@
           </a>
           <ul class="header-list list">
             <li class="header-item">
-              <a class="link header-link" href="./index.html">Studio</a>
+              <a class="header-hover header-link link  " href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="header-item">
               <a class="link header-link" href="./portfolio.html">Portfolio</a>
@@ -55,7 +61,9 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-text">Effective Solutions for Your Business</h1>
-          <button class="hero-btn" type="button">Order Service</button>
+          <button data-modal-open class="hero-btn" type="button">
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -64,32 +72,69 @@
           <h2 class="page-info-title visually-hidden">test</h2>
           <ul class="page-info-list list">
             <li class="page-info-item">
-              <h3 class="page-info-item-title">Strategy</h3>
-              <p class="page-info-item-dscr">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
+              <div class="info-svg-container">
+                <svg class="info-svg" width="64" height="64">
+                  <use
+                    xlink:href="./images/icons.svg#icon-antenna-1"
+                  ></use>
+                </svg>
+              </div>
+ 
+              <div class="page-info-content">
+                <h3 class="page-info-item-title">Strategy</h3>
+                <p class="page-info-item-dscr">
+                  Our goal is to identify the business problem to walk away with
+                  the perfect and creative solution.
+                </p>
+              </div>
             </li>
             <li class="page-info-item">
-              <h3 class="page-info-item-title">Punctuality</h3>
-              <p class="page-info-item-dscr">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
+              <div class="info-svg-container">
+                <svg class="info-svg" width="64" height="64">
+                  <use
+                    xlink:href="./images/icons.svg#icon-clock-1"
+                  ></use>
+                </svg>
+                </div>
+              <div class="page-info-content">
+                <h3 class="page-info-item-title">Punctuality</h3>
+                <p class="page-info-item-dscr">
+                  Bring the key message to the brand's audience for the best
+                  price within the shortest possible time.
+                </p>
+              </div>
             </li>
             <li class="page-info-item">
-              <h3 class="page-info-item-title">Diligence</h3>
-              <p class="page-info-item-dscr">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
+              <div class="info-svg-container">
+                <svg class="info-svg" width="64" height="64">
+                  <use
+                    xlink:href="./images/icons.svg#icon-diagram-1"
+                  ></use>
+                </svg>
+                </div>
+              <div class="page-info-content">
+                <h3 class="page-info-item-title">Diligence</h3>
+                <p class="page-info-item-dscr">
+                  Research and confirm brands that present the strongest digital
+                  growth opportunities and minimize risk.
+                </p>
+              </div>
             </li>
             <li class="page-info-item">
-              <h3 class="page-info-item-title">Technologies</h3>
-              <p class="page-info-item-dscr">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
-              </p>
+              <div class="info-svg-container">
+                <svg class="info-svg" width="64" height="64">
+                  <use
+                    xlink:href="./images/icons.svg#icon-astronaut-1"
+                  ></use>
+                </svg> 
+                </div>
+              <div class="page-info-content">
+                <h3 class="page-info-item-title">Technologies</h3>
+                <p class="page-info-item-dscr">
+                  Design practice focused on digital experiences. We bring forth
+                  a deep passion for problem-solving.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -121,6 +166,45 @@
               <div class="container-item-team">
                 <h3 class="our-team-item-title">Mark Guerrero</h3>
                 <p class="our-team-item-dscr">Product Designer</p>
+                     <ul class="our-team-svg">
+                <li class="our-team-info-svg">
+                  <a href="">
+                    <svg class="our-team-info-svg" width="16" height="16">
+                      <use
+                        xlink:href="./images/icons.svg#icon-instagram-2"
+                      ></use>
+                    </svg> 
+                  </a>
+                </li>
+                <li class="our-team-info-svg">
+                  <a href="">
+                    <svg class="our-team-info-svg" width="16" height="16">
+                      <use
+                        xlink:href="./images/icons.svg#icon-twitter-1"
+                      ></use>
+                    </svg> 
+                  </a>
+                </li>
+                <li class="our-team-info-svg">
+                  <a href="">
+                    <svg class="our-team-svg" width="16" height="16">
+                      <use
+                        xlink:href="./images/icons.svg#icon-facebook-1"
+                      ></use>
+                    </svg> 
+                  </a>
+                </li>
+                <li class="our-team-info-svg">
+                  <a href="">
+                    <svg class="our-team-info-svg" width="16" height="16">
+                      <use
+                        xlink:href="./images/icons.svg#icon-linkedin-1"
+                        
+                      ></use>
+                    </svg> 
+                  </a>
+                </li>
+              </ul>
               </div>
             </li>
             <li class="our-team-item">
@@ -128,6 +212,45 @@
               <div class="container-item-team">
                 <h3 class="our-team-item-title">Tom Ford</h3>
                 <p class="our-team-item-dscr">Frontend Developer</p>
+                     <ul class="our-team-svg">
+                <li class="our-team-info-svg">
+                  <a href="">
+                    <svg class="info-svg" width="16" height="16">
+                      <use
+                        xlink:href="./images/icons.svg#icon-instagram-2"
+                      ></use>
+                    </svg> 
+                  </a>
+                </li>
+                <li class="our-team-info-svg">
+                  <a href="">
+                    <svg class="info-svg" width="16" height="16">
+                      <use
+                        xlink:href="./images/icons.svg#icon-twitter-1"
+                      ></use>
+                    </svg> 
+                  </a>
+                </li>
+                <li class="our-team-info-svg">
+                  <a href="">
+                    <svg class="info-svg" width="16" height="16">
+                      <use
+                        xlink:href="./images/icons.svg#icon-facebook-1"
+                      ></use>
+                    </svg> 
+                  </a>
+                </li>
+                <li class="our-team-info-svg">
+                  <a href="">
+                    <svg class="info-svg" width="16" height="16">
+                      <use
+                        xlink:href="./images/icons.svg#icon-linkedin-1"
+                        
+                      ></use>
+                    </svg> 
+                  </a>
+                </li>
+              </ul>
               </div>
             </li>
             <li class="our-team-item">
@@ -135,6 +258,45 @@
               <div class="container-item-team">
                 <h3 class="our-team-item-title">Camila Garcia</h3>
                 <p class="our-team-item-dscr">Marketing</p>
+                     <ul class="our-team-svg">
+                <li class="our-team-info-svg">
+                  <a href="">
+                    <svg class="info-svg" width="16" height="16">
+                      <use
+                        xlink:href="./images/icons.svg#icon-instagram-2"
+                      ></use>
+                    </svg> 
+                  </a>
+                </li>
+                <li class="our-team-info-svg">
+                  <a href="">
+                    <svg class="info-svg" width="16" height="16">
+                      <use
+                        xlink:href="./images/icons.svg#icon-twitter-1"
+                      ></use>
+                    </svg> 
+                  </a>
+                </li>
+                <li class="our-team-info-svg">
+                  <a href="">
+                    <svg class="info-svg" width="16" height="16">
+                      <use
+                        xlink:href="./images/icons.svg#icon-facebook-1"
+                      ></use>
+                    </svg> 
+                  </a>
+                </li>
+                <li class="our-team-info-svg">
+                  <a href="">
+                    <svg class="info-svg" width="16" height="16">
+                      <use
+                        xlink:href="./images/icons.svg#icon-linkedin-1"
+                        
+                      ></use>
+                    </svg> 
+                  </a>
+                </li>
+              </ul>
               </div>
             </li>
             <li class="our-team-item">
@@ -142,12 +304,61 @@
               <div class="container-item-team">
                 <h3 class="our-team-item-title">Daniel Wilson</h3>
                 <p class="our-team-item-dscr">UI Designer</p>
+                     <ul class="our-team-svg">
+                <li class="our-team-info-svg">
+                  <a href="">
+                    <svg class="info-svg" width="16" height="16">
+                      <use
+                        xlink:href="./images/icons.svg#icon-instagram-2"
+                      ></use>
+                    </svg> 
+                  </a>
+                </li>
+                <li class="our-team-info-svg">
+                  <a href="">
+                    <svg class="info-svg" width="16" height="16">
+                      <use
+                        xlink:href="./images/icons.svg#icon-twitter-1"
+                      ></use>
+                    </svg> 
+                  </a>
+                </li>
+                <li class="our-team-info-svg">
+                  <a href="">
+                    <svg class="info-svg" width="16" height="16">
+                      <use
+                        xlink:href="./images/icons.svg#icon-facebook-1"
+                      ></use>
+                    </svg> 
+                  </a>
+                </li>
+                <li class="our-team-info-svg">
+                  <a href="">
+                    <svg class="info-svg" width="16" height="16">
+                      <use
+                        xlink:href="./images/icons.svg#icon-linkedin-1"
+                        
+                      ></use>
+                    </svg> 
+                  </a>
+                </li>
+              </ul>
               </div>
+
+         
+
             </li>
           </ul>
         </div>
       </section>
     </main>
+
+    <section class="customers-info">
+      <div class="container-customers">
+        <h2 class="customers-title">customers</h2>
+      </div>
+
+    </section>
 
     <footer class="footer">
       <div class="container">
@@ -160,5 +371,24 @@
         </p>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" data-modal-close>
+          <svg class="modal-svg" width="8" height="8">
+            <use
+              xlink:href="./images/icons.svg#icon-close-black-18dp-2-1"
+            ></use>
+          </svg>
+        </button>
+
+      
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
+
+
+
