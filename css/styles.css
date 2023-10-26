@@ -147,7 +147,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.32px;
   position: relative;
-  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-hover {
@@ -228,7 +228,7 @@ body {
   border-radius: 4px;
   border: none;
   min-width: 169px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -333,19 +333,21 @@ body {
   background-color: var(--iris);
   height: 40px;
   width: 40px;
-  border-radius: 100px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-.our-team-info-svg:hover {
+.our-team-link:hover, 
+.our-team-link:focus {
   background-color: var(--hover-link);
 }
 
 .team-svg {
-  fill: white;
+  fill: var(--CLOUD);
 }
 
 .our-team-svg {
@@ -465,7 +467,11 @@ body {
 
 .footer-container {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
+}
+
+.footer-section-one{
+  margin-right: 120px;
 }
 
 .footer {
@@ -494,7 +500,7 @@ body {
   width: 264px;
 }
 
-.footer-section2-title {
+.footer-section-two-title {
   color: var(--WHITE);
   font-size: 16px;
   font-weight: 500;
@@ -503,11 +509,11 @@ body {
   margin-bottom: 16px;
 }
 
-.footer-section2-list {
+.footer-section-two-list {
   gap: 16px;
 }
 
-.footer-section2-item {
+.footer-section-two-link {
   border-radius: 50%;
   padding: 8px;
   background-color: var(--iris);
@@ -516,11 +522,11 @@ body {
   cursor: pointer;
 }
 
-.footer-section2-item:hover {
+.footer-section-two-item:hover {
   background-color: var(--GREEN);
 }
 
-.footer-section2-icon {
+.footer-section-two-icon {
   fill: var(--WHITE);
 }
 
